@@ -3,17 +3,19 @@ button {
   padding: 5px 25px;
   font-size: 14px;
   border-style: solid;
+  color: white; 
 }
 
 /*Primary*/
+.button-primary-color {
+  color: rgba(51, 160, 255, 1);}
+  
  .button-primary:hover {
   background-color: #03458b;
 } 
 
 .button-primary {
   background-color: #33a0ff;
-  color: white; 
-  color:rgba(51, 160, 255, 1);
   border-color: #33a0ff;
 } 
 
@@ -23,13 +25,12 @@ button {
 }
 .button-primary-opaque {
   color:rgba(51, 160, 255, 1);
-  color: #33a0ff; 
+  /* color: #33a0ff;  */
 }
 
 /*Danger*/
 .button-danger {
   background-color: rgba(255, 72, 88, 1);
-  color: white;
   border: 1px solid #F53848;
 }
 
@@ -135,6 +136,3 @@ button {
   background-color: white;
 }
 
-.button-color {
-  color: white;
-}
