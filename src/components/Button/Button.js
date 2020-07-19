@@ -1,29 +1,57 @@
-import React, {Component} from 'react';
-import "./Button.css"
-// import './PrimaryButton.css'
-// import PrimaryButton from './PrimaryButton.js'
+import React, { Component } from "react";
+import "./Button.css";
+import "./Button.stories.js";
+
 // This is a functional component - just sent up a little differently as an arrow function!
 
 const Button = (props) => {
-    // let classList = ""
+  // let classList = ""
 
-    let classList = []
-    let types = ['primary', 'success', 'danger','warning','large','small','outline','hover','opacity']
-    if(types.includes(props.type)){
-        // classList +=` `
-        classList.push(`button-${props.type}`)
-    if (props.large){
-            classList.push("button-large")
-        }
-    if (props.small){
-            classList.push("button-small")
-        }
+  let classList = [];
+  let types = ["primary", "success", "danger", "warning", "default"];
+  if (types.includes(props.type)) {
+    // classList +=` `
+    classList.push(`button-${props.type}`);
+    if (props.large) {
+      classList.push("button-large");
     }
-    
+    if (props.small) {
+      classList.push("button-small");
+    }
+    if (props.opaque) {
+      classList.push("button-opaque");
+    }
+    if (props.hover) {
+      classList.push("button-hover");
+    }
+    if (props.border) {
+      classList.push("button-border");
+    }
+    if (props.outline) {
+      classList.push(`button-${props.type}`);
+    }
 
-   return <button className={classList.join(" ")}>
-        {props.label}
-    </button>
-}
+    if (!props.large) {
+      classList.slice("button-large");
+    }
+    if (!props.small) {
+      classList.slice("button-small");
+    }
+    if (!props.opaque) {
+      classList.slice("button-opaque");
+    }
+    if (!props.hover) {
+      classList.slice("button-hover");
+    }
+    if (!props.border) {
+      classList.slice("button-border");
+    }
+    if (!props.outline) {
+      classList.slice(`button-${props.type}`);
+    }
+  }
+
+  return <button className={classList.join(" ")}>{props.label}</button>;
+};
 // onClick={props.when(Clicked)}
-export default Button; 
+export default Button;
