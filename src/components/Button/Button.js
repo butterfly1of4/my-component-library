@@ -10,7 +10,7 @@ const Button = (props) => {
   let classList = [];
   let types = ["primary", "success", "danger", "warning", "default"];
   if (types.includes(props.type)) {
-    // classList +=` `
+  
     classList.push(`button-${props.type}`);
     if (props.large) {
       classList.push("button-large");
@@ -22,33 +22,31 @@ const Button = (props) => {
       classList.push("button-opaque");
     }
     if (props.hover) {
-      classList.push("button-hover");
+      classList.push('button-hover');
     }
     if (props.border) {
-      classList.push("button-border");
-    }
-    if (props.outline) {
-      classList.push(`button-${props.type}`);
+      classList.push('button-border');
     }
 
-    if (!props.large) {
-      classList.slice("button-large");
-    }
-    if (!props.small) {
-      classList.slice("button-small");
-    }
-    if (!props.opaque) {
-      classList.slice("button-opaque");
-    }
-    if (!props.hover) {
-      classList.slice("button-hover");
-    }
-    if (!props.border) {
-      classList.slice("button-border");
-    }
-    if (!props.outline) {
-      classList.slice(`button-${props.type}`);
-    }
+
+    // if (!props.large) {
+    //   classList.slice("button-large");
+    // }
+    // if (!props.small) {
+    //   classList.slice("button-small");
+    // }
+    // if (!props.opaque) {
+    //   classList.slice("button-opaque");
+    // }
+    // if (!props.hover) {
+    //   classList.slice("button-hover");
+    // }
+    // if (!props.border) {
+    //   classList.slice("button-border");
+    // }
+    // if (!props.outline) {
+    //   classList.slice(`button-${props.type}`);
+    // }
   }
 
   return <button className={classList.join(" ")}>{props.label}</button>;

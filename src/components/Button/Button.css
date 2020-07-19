@@ -1,26 +1,31 @@
 button {
-    border-radius: 2px;
-    padding: 5px 25px;
-    font-size: 14px;
+  border-radius: 2px;
+  padding: 5px 25px;
+  font-size: 14px;
+  border-width: 1px;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  background-color: purple;
 }
 /*TAKE OUT BORDER ON ALL-ADD OUTLINE AT BOTTOM*/
-  /*Primary*/
+/*Primary*/
 
-.button-primary{
-  background-color: #33A0FF;
+.button-primary {
+  background-color: #33a0ff;
   color: white;
-  border: 1px solid #33A0FF;
+  border-color: #33a0ff;
 }
 
 .button-primary:hover {
   background-color: #03458b;
 }
 .button-primary-border {
-    color: #33A0FF;
-  }
+  color:rgba(51, 160, 255, 1);
+
+}
 .button-primary-opaque {
-  color: #33A0FF;
-  
+  color: #33a0ff;
 }
 
 /*Danger*/
@@ -118,24 +123,23 @@ button {
   background-color: white;
   border: 1px solid #22262A;
 } */
- 
+
 .button-small {
   padding: 2.5px 15px;
   width: 150px;
   height: 46px;
-  color: white;
+  /* color: white; */
 }
 
 .button-large {
   height: 60px;
   width: 171px;
   padding: 10px 50px;
-  color: white;
-
+  /* color: white; */
 }
 
 .button-opaque {
-  opacity: 0.3; ;
+  opacity: 0.3;
 }
 .button-border {
   background-color: white;
