@@ -17,65 +17,120 @@ button {
     color: white;
   }
   /*Primary*/
-.button-primary:not(:hover) {
+
+.button-primary{
   background-color: #33A0FF;
   color: white;
   border: 1px solid #33A0FF;
 }
+
+.button-primary-border {
+    background-color: white !important;
+    border: #0069d9;
+  }
 .button-primary:hover {
   background-color: #03458b;
   color: white;
   border: #0069d9;
 }
-.button-primary-outline {
-    background-color: white;
-    border: #0069d9;
-  }
+.button-primary-opaque {
+  background-color: #33A0FF;
+  opacity: 0.2;
+}
 
-
-
-
-
-
-
-
-
-/* 
+/*Danger*/
 .button-danger {
-  background-color: #db3544;
+  background-color: #FF4858;
   color: white;
-  border: #c4e93d;
+  border: 1px solid #F53848;
 }
+
+.button-danger-opaque {
+  background-color: #FF4858;
+  opacity: 0.2;
+}
+
 .button-danger-outline {
-    background-color: #db3544;
-   
-  }
+  background-color: white;
+  border: 1px solid #F53848;
+  color: #F53848;
+}
+
+.button-danger:hover {
+  background-color: #F53848
+  color: white;
+  border:  1px solid #F53848;
+}
+
+/*Success*/
 .button-success {
-  background-color: #28a744;
+  background-color: #0AD00A;
   color: white;
-  border: #0069d9;
+  border: 1px solid #0AD00A;
 }
-.button-success-outline {
-    background-color: #28a744;
 
-  }
+.button-success:hover {
+  color: white;
+  background-color: #07C107;
+  border: 1px solid #07C107;
+}
+
+.button-success-opaque {
+  color: #0AD00A;
+  opacity: 0.2;
+}
+
+.button-border {
+  background-color: white;
+  border: 1px solid #07C107;
+  color: #07C107;
+}
+
+/*Warning*/
+
 .button-warning {
-  background-color: #ffc205;
+  background-color: #FFC600;
   color: white;
-  border: #5a184c;
+  border: 1px solid #FFC600;
 }
-.button-warning-outline {
-    background-color: #ffc205;
-    color: white;
-    border: #0069d9;
-  }
 
+.button-warning-opaque {
+  color: #FFC600;
+  opacity: 0.2;
+}
 
-.button-outline {
-    opacity: 0.7;
+.button-warning:hover{
+  background-color: #EBB600;
+  color: white;
+}
 
-  }
-  .button-small:hover{
-      opacity: 0.5;
-  } */
+.button-warning-border {
+  color: #FFC600;
+  border: 1px solid #FFC600;
+}
 
+/*Default*/
+
+.button-default {
+  color: white;
+  background-color: #22262A;
+  border: 1px solid #22262A;
+}
+
+.button-default:hover {
+  background-color: #13161A;
+  color: white;
+}
+
+.button-default-opaque {
+  opacity: 0.2;
+  color: #22262A;
+  background: #F6F7F8;
+}
+
+.button-default-border {
+  color: #22262A;
+  background-color: white;
+  border: 1px solid #22262A;
+}
+ 

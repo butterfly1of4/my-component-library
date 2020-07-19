@@ -8,7 +8,7 @@ const Button = (props) => {
     // let classList = ""
 
     let classList = []
-    let types = ['primary', 'success', 'danger','warning','large','small','outlne']
+    let types = ['primary', 'success', 'danger','warning','large','small','outline','hover','opacity']
     if(types.includes(props.type)){
         // classList +=` `
         classList.push(`button-${props.type}`)
