@@ -8,13 +8,14 @@ const Button = (props) => {
   // let classList = ""
 
   let classList = [];
-  let types = ["primary", "success", "danger", "warning", "default"];
+  let types = [ "primary","success", "danger", "warning", "default"];
   if (types.includes(props.type)) {
-  
     classList.push(`button-${props.type}`);
+  }
+   
     if (props.large) {
-      classList.push("button-large");
-    }
+        classList.push("button-large");
+      }
     if (props.small) {
       classList.push("button-small");
     }
@@ -27,6 +28,9 @@ const Button = (props) => {
     if (props.border) {
       classList.push('button-border');
     }
+    if (props.borderl) {
+        classList.push('button-border');
+      }
 
 
     // if (!props.large) {
@@ -47,7 +51,7 @@ const Button = (props) => {
     // if (!props.outline) {
     //   classList.slice(`button-${props.type}`);
     // }
-  }
+  
 
   return <button className={classList.join(" ")}>{props.label}</button>;
 };
