@@ -54,3 +54,7 @@ storiesOf('Button', module)
 .add('Large Border Default', () => <Button  type="default" large border label="Default" />)
 .add('Large Default', () => <Button  type="default" large color label="Default" />)
 
+.add('AddCart', () => <Button type="cart" small opaque label="Add To Cart" />)
+.add('AddFavorites', () => <Button type="heart" label="Add To Favorites" />)
+.add('Heart', () => <Button type="heart" label="Heart" />)
+.add('Cart', () => <Button type='cart' label="Cart" />)
