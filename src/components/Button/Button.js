@@ -35,26 +35,6 @@ const Button = (props) => {
       }
 
 
-    // if (!props.large) {
-    //   classList.slice("button-large");
-    // }
-    // if (!props.small) {
-    //   classList.slice("button-small");
-    // }
-    // if (!props.opaque) {
-    //   classList.slice("button-opaque");
-    // }
-    // if (!props.hover) {
-    //   classList.slice("button-hover");
-    // }
-    // if (!props.border) {
-    //   classList.slice("button-border");
-    // }
-    // if (!props.outline) {
-    //   classList.slice(`button-${props.type}`);
-    // }
-  
-
   return <button className={classList.join(" ")}>{props.label}</button>;
 };
 // onClick={props.when(Clicked)}
