@@ -1,0 +1,21 @@
+/* 
+
+
+
+.heart {
+    background-image: url('components/Icons/hearts.png');
+    height: 14px;
+    width: 15px;
+    background-position: center;
+}
+.cart {
+    background-image: url('/components/Icons/cart_2white.png');
+    height: 14px;
+    width: 15px;
+    background-position: center;
+}
+.stars {
+    background-image: url('components/Icons/rate stars.png');
+    height: 10px;
+    width: 73px;
+} */
