@@ -3,39 +3,40 @@ button {
   padding: 5px 25px;
   font-size: 14px;
   border-style: solid;
-  color: white; 
+
 }
 
 /*Primary*/
-.button-primary-color {
-  color: rgba(51, 160, 255, 1);}
-  
- .button-primary:hover {
+.button-primary-hover {
   background-color: #03458b;
 } 
-
 .button-primary {
   background-color: #33a0ff;
   border-color: #33a0ff;
+  color: white;
 } 
 
+
 .button-primary-border {
-  color:rgba(51, 160, 255, 1);
-  border-color: rgba(51, 160, 255, 1);
+  color: #33a0ff;
+  border-color:#33a0ff;
+  background-color: white;
 }
 .button-primary-opaque {
   color:rgba(51, 160, 255, 1);
-  /* color: #33a0ff;  */
-}
+  
+  z-index:2;
+  opacity: 0.3;
+} 
 
 /*Danger*/
-.button-danger {
+
+/* .button-danger {
   background-color: rgba(255, 72, 88, 1);
   border: 1px solid #F53848;
 }
 
 .button-danger-opaque {
-  /* background-color: rgba(255, 72, 88, 1); */
   opacity: 0.2;
   color: rgba(255, 72, 88, 1);
 }
@@ -47,10 +48,10 @@ button {
 
 .button-danger:hover {
   background-color: #F53848;
-} 
+}  */
 
 /*Success*/
-.button-success {
+/* .button-success {
   background-color: #0AD00A;
   color: white;
   border: 1px solid #0AD00A;
@@ -68,11 +69,11 @@ button {
 
 .button-success-border {
   color: #07C107;
-}
+} */
 
 /*Warning*/
 
-.button-warning {
+/* .button-warning {
   background-color: #FFC600;
   color: white;
   border: 1px solid #FFC600;
@@ -90,11 +91,11 @@ button {
 
 .button-warning-border {
   color: #FFC600;
-}
+} */
 
 /*Default*/
 
-.button-default {
+/* .button-default {
   background-color: #22262A;
   border: 1px solid #22262A;
   color: #22262A;
@@ -112,27 +113,24 @@ button {
 
 .button-default-border {
   color: #22262A;
-}
+} */
 
 .button-small {
   padding: 2.5px 15px;
   width: 150px;
   height: 46px;
-  /* color: rgba(255, 255, 255); */
 }
 
 .button-large {
   height: 60px;
   width: 171px;
   padding: 10px 50px;
-  /* color: rgba(255, 255, 255); */
 }
-
+/* 
 .button-opaque {
   opacity: 0.3;
-
 }
 .button-border {
   background-color: white;
-}
+} */
 

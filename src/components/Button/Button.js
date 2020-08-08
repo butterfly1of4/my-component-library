@@ -22,17 +22,15 @@ const Button = (props) => {
       classList.push("button-small");
     }
     if (props.opaque) {
-      classList.push("button-opaque");
+      classList.push(`button-${props.type}-opaque`);
     }
     if (props.hover) {
-      classList.push('button-hover');
+      classList.push(`button-${props.type}:hover`);
     }
     if (props.border) {
-      classList.push('button-border');
+      classList.push(`button-${props.type}-border`);
     }
-    if (props.borderl) {
-        classList.push('button-border');
-      }
+
 
 
   return <button className={classList.join(" ")}>{props.label}</button>;
