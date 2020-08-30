@@ -1,0 +1,20 @@
+.Number {
+    background-color: #F6F7F8;
+    height: 116px;
+    width: 46px;
+    display: grid;
+    grid-template-rows: 116px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.minus {
+    grid-area: 1 / 1;
+}
+
+.counter {
+    grid-area: 1 / 2;
+}
+
+.plus {
+    grid-area: 1 / 3;
+}
