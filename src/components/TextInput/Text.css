@@ -1,0 +1,24 @@
+
+
+.Text-small {
+    height: 38px;
+    font-size: 14px;
+    width: 300px;
+    border: 1px solid FIF3F4;
+}
+
+.Text-medium {
+    height: 46px;
+    width: 300px;
+    border: 1px solid FIF3F4;
+}
+
+.Text-large {
+    height: 60px;
+    width: 300px;
+    border: 1px solid FIF3F4;
+ }
+
+.label {
+    font-size: 16px;
+}

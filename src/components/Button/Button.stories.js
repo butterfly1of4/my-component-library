@@ -12,7 +12,7 @@ import Button from './Button';
 storiesOf('Button', module)
 //Primary
 .add('Small Primary', () => <Button type="primary" small label="Primary" />) 
-.add('Hover Primary', () => <Button type="primary" hover small label="Primary" />) 
+.add('Hover Primary', () => <Button typef="primary" hover small label="Primary" />) 
 .add('Border Primary', () => <Button type="primary" border small label="Primary" />) 
 .add('Opaque Primary', () => <Button type="primary" opaque small label="Primary" />) 
 .add('Large Primary', () => <Button type="primary" large label="Primary" />)                                          
