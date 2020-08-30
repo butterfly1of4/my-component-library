@@ -4,8 +4,8 @@ import Minus from "./Minus.png"
 import Plus from "./Plus.png"
 
 let classList = ["minus", "counter", "plus"]
-let subtract = <img src={Minus} />
-let add = <img src={Plus} />
+// let subtract = <img src={Minus} />
+// let add = <img src={Plus} />
 
 class Number extends Component {
   constructor(props) {
@@ -13,6 +13,7 @@ class Number extends Component {
     this.state = {
       value: 0,
       increment: 1,
+      clicked: false,
       newCount: num
     };
     this.handlePlus = this.handlePlus.bind(this);
@@ -21,29 +22,30 @@ class Number extends Component {
   }
 
   handlePlus = () => {
-    const { value } = this.state;
-    this.setState({ value: value + 1 });
+    let newCount = this.state.value +1
+    this.setState({ value: newCount });
   };
 
   handleMinus = () => {
-    const { value } = this.state;
-    this.setState({ value: value - 1 });
+    let newCount = this.state.value -1
+    this.setState({ value:newCount });
   };
 
   handleClick =(e)=> {
-
+    
     this.setState({newCount: value})
   }
   render() {
      
     return (
     <div className={classList}>
-        <div >{this.state.value}</div>
-            <div>
-            
-            {subtract}{this.state.newCount}{add}
-            </div>
+                  
+      <div >{this.state.value}</div>
+      <div className ="minus" {...handleMinus}>-</div>
+        {this.state.newCount}
+      <div className="plus" {...handlePlus}>+</div>
     </div>
+
     )
   }
 }
