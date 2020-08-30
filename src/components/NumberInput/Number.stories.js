@@ -4,4 +4,4 @@ import { storiesOf} from '@storybook/react'
 
 storiesOf('Number', module)
 
-.add('Counter', () => <Counter Number plus minus counter/>)
+.add('Number', () => <Number Number plus minus counter/>)
