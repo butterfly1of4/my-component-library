@@ -16,12 +16,15 @@ const Text = props => {
     classList += `-large`;
   }
   return (
+    <div>
+      <div>{props.label}</div>
     <input
       email={email}
       type={input}
       className={classList}
       placeholder={placeholder}
     ></input>
+    </div>
   );
 };
 export default Text;

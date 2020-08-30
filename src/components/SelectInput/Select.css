@@ -1,0 +1,38 @@
+.Select-small {
+    height: 38px;
+    font-size: 14px;
+    width: 300px;
+    border: 1px solid FIF3F4;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.Select-medium {
+    height: 46px;
+    width: 300px;
+    border: 1px solid FIF3F4;
+    color: black;
+    background-color: #FFFFFF;
+
+}
+
+.Select-large {
+    height: 60px;
+    width: 300px;
+    border: 1px solid FIF3F4;
+    color: black;
+    background-color: #FFFFFF;
+
+ }
+
+.label {
+    font-size: 16px;
+}
+
+.selected {
+    background-color: #FAFAFB;
+}
+
+/* .SelectDownArrow {
+
+} */
