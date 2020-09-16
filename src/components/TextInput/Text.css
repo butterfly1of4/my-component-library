@@ -4,23 +4,33 @@
     height: 38px;
     font-size: 14px;
     width: 300px;
-    border: 1px solid FIF3F4;
+    border: 1px solid #F1F3F4;
+    padding-left: 3%;
+    margin-top: 5px;
+
 }
 
 .Text-medium {
     height: 46px;
     width: 300px;
     font-size: 16px;
-    border: 1px solid FIF3F4;
+    border: 1px solid #F1F3F4;
+    padding-left: 3%;
+    margin-top: 5px;
+
 }
 
 .Text-large {
     height: 60px;
     width: 300px;
     font-size: 16px;
-    border: 1px solid FIF3F4;
+    padding-left: 3%;
+    border: 1px solid #F1F3F4;
+    margin-top: 5px;
+
  }
 
 .label {
-    font-size: 16px;
+    font-size: 14px;
+    padding-bottom: 3%;
 }

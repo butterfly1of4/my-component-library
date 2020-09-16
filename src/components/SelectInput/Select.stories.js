@@ -5,11 +5,11 @@ import Select from "./Select"
 
 storiesOf("Select", module)
     .add("Large Select", () => {
-        return <Select placeholder="Select" large/>
+        return <Select placeholder="Select" label="Large" large/>
     })
     .add("Medium Select", () => {
-        return <Select placeholder="Select" medium/>
+        return <Select placeholder="Select" label="Medium" medium/>
     })
     .add("Small Select", () => {
-        return <Select placeholder="Select" small/>
+        return <Select placeholder="Select" label="Small" small/>
     })

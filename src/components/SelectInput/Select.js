@@ -1,49 +1,59 @@
 import React, { Component } from "react";
-import "./Select.stories.js"
-import "./Select.css"
-// import "../../Icons/SelectDownArrow.png"
+import "./Select.stories.js";
+import "./Select.css";
+import arrow_down from "../SelectInput/arrow_down.png";
 
-const Select = (props) => {
-    const {large, medium, small, selected }= props;
-    let classList= `Select`
-    let opened = false
-    let newText = ""
-
-    
-return (
-    <div>
-        {props.placeholder} 
-    </div>
-)
+class Select extends Component {
+  container = React.createRef();
+  state = {
+    open: false
+  };
+  componentDidMount() {
+    document.addEventListener("mousedown", this.handleOnClick);
+  }
+  componentWillUnmount() {
+    document.removeEventListener("mousedown", this.handleClickOutside);
+  }
+  handleClickOutside = e => {
+    if (this.container.current && !this.container.current.contains(e.target)) {
+      this.setState({
+        open: false,
+      });
+    }
+  };
+  handleOnClick = () => {
+    this.setState(state => {
+      return {
+        open: !state.open,
+      };
+    });
+  };
+  render() {
+    return (
+      <div className="App">
+        <div className="container" ref={this.container}>
+          <div
+            type="input"
+            className="Input"
+            placeholder="Select"
+            onClick={this.handleOnClick}
+          >
+            Select <img src={arrow_down} placeholder="arrow" />
+          </div>
+          {this.state.open && (
+            <div class="container">
+              <ul className="">
+                <li>Large</li>
+                <li>Medium</li>
+                <li>Small</li>
+                <li>Extra-Small</li>
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Select
-
-
-
-
-
-// class Select extends Component {
-//     constructor(props){
-//         super(props)
-//         this.state = {
-//             placeholder: "",
-//             isDown: false,
-//             newText: ""
-//         }
-//         this.handleChange = this.handleChange.bind(this);
-// 		this.handleSubmit = this.handleSubmit.bind(this);
-//     handleEvent =(e) => {
-//         this.setState({[e.target.placeholder]: e.target.value})
-//         isDown === true
-//     } 
-//     }
-//     render (){
-//         let firstPlaceholder = this.props.placeholder
-//         return (
-//             <div>
-
-//             </div>
-//         )
-//     }
-// }
+export default Select;
